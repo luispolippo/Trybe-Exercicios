@@ -1,0 +1,9 @@
+1 - Cliente envia o domínio google.com para servidor DNS, que interpreta o domínio e responde com o IP correspondente.
+
+2 - Cliente faz requisição para o endereço de IP, usando o protocolo HTTP.
+
+3 - Requisição segue uma rota até o servidor do google e, ao chegar nos data center's, passa por um balanceamento de carga para ser encaminhado à um dos servidores.
+
+4 - Servidor recebe a requisição e, se estiver tudo certo, responde com o status code 200OK e a página HTML correspondente.
+
+5 - Cliente recebe a resposta e usa a engine para renderizar a página.
