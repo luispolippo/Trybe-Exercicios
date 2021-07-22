@@ -1,32 +1,57 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML</title>
     <style>
-        h1 {
-            font-size: 65px;
-            color: orange;
-        }
+      body {
+        font-size: 16px;
+      }
 
-        ul {
-            background-color: paleturquoise;
-        }
+      h1 {
+        font-size: 65px;
+        color: orange;
+        font-family: sans-serif;
+        text-align: center;
+      }
 
-        .list-style {
-            background-color: palegoldenrod;
-        }
+      ul {
+        background-color: paleturquoise;
+        line-height: 3em;
+      }
+
+      p {
+        text-align: center;
+        font-size: 3em;
+        font-weight: 600;
+        font-style: italic;
+        text-decoration: underline;
+      }
+
+      .list-style {
+        background-color: palegoldenrod;
+      }
+
+      #amarelo {
+        background-color: yellow;
+      }
+      #vermelho {
+        background-color: red;
+      }
+      #marrom {
+        background-color: brown;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Exercícios 3.2</h1>
     <p class="list-style">Qual é sua cor favorita?</p>
     <ul class="list-style">
-        <li>Amarelo</li>
-        <li>Vermelho</li>
-        <li>Marrom</li>
+      <li id="amarelo">Amarelo</li>
+      <li id="vermelho">Vermelho</li>
+      <li id="marrom">Marrom</li>
     </ul>
-</body>
+  </body>
 </html>
