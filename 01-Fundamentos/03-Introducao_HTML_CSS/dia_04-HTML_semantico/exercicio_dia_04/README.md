@@ -1,3 +1,5 @@
+# Exercício
+
 O objetivo desses exercícios é colocar em prática o que você acabou de aprender sobre **HTML semântico**.
 Para tal, criaremos uma página que apresenta um dos animais mais impressionantes que existem: o [Stomatopoda](https://www.nationalgeographic.com/science/article/natures-most-amazing-eyes-just-got-a-bit-weirder). A estilização da página fica a seu critério. 😉
 
