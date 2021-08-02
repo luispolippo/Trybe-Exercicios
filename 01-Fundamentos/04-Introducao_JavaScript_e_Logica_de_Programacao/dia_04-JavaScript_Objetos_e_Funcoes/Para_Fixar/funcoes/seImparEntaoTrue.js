@@ -1,12 +1,15 @@
-let num1 = 30;
-let num2 = 20;
-let num3 = 6;
-let result;
+const num1 = 7;
+const num2 = 15;
+const num3 = 33;
 
-if (num1 % 2 != 0 || num2 % 2 != 0 || num3 % 2 != 0) {
-  result = true;
-} else {
-  result = false;
+function isOdd(num1, num2, num3){
+  if (num1 % 2 != 0 || num2 % 2 != 0 || num3 % 2 != 0) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
-console.log(result);
+
+
+console.log(isOdd(num1, num2, num3));
