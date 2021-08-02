@@ -1,11 +1,13 @@
-let value = 10;
+const value = 10;
 
-if (value > 0) {
-  console.log("Positive");
-} else if (value < 0) {
-  console.log("Negative");
-} else {
-  console.log("Zero");
+function positiveOrNegative(value) {
+  if (value > 0) {
+    return "Positive";
+  } else if (value < 0) {
+    return "Negative";
+  } else {
+    return "Zero";
+  }
 }
 
-
+console.log(positiveOrNegative(value));
