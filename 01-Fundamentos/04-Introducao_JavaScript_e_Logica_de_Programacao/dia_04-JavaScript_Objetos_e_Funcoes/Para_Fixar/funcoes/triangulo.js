@@ -1,18 +1,21 @@
-let angulo1 = 90;
-let angulo2 = 45;
-let angulo3 = 45;
-let result;
+const angulo1 = 90;
+const angulo2 = 45;
+const angulo3 = 45;
 
-if (angulo1 < 0 || angulo2 < 0 || angulo3 < 0) {
-  result = "ERRO! Angulo inválido";
-} else {
-  let soma = angulo1 + angulo2 + angulo3;
-
-  if (soma == 180) {
-    result = true;
+function isTriangle(ang1, ang2, ang3){
+  if (ang1 < 0 || ang2 < 0 || ang3 < 0) {
+    return "ERRO! Angulo inválido";
   } else {
-    result = false;
+    let soma = ang1 + ang2 + ang3;
+  
+    if (soma == 180) {
+      return true;
+    } else {
+      return false;
+    }
   }
 }
 
-console.log(result);
+
+
+console.log(isTriangle(angulo1, angulo2, angulo3));
