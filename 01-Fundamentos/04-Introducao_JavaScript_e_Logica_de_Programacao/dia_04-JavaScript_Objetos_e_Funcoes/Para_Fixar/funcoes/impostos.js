@@ -13,33 +13,40 @@ const aliquota275 = 0.275;
 //------------------------------
 
 let salarioBruto = 3000;
-let INSS;
-let IR;
 
-if (salarioBruto <= 1556.94) {
-  INSS = salarioBruto * aliquota08;
-} else if (salarioBruto <= 2594.92) {
-  INSS = salarioBruto * aliquota09;
-} else if (salarioBruto <= 5189.82) {
-  INSS = salarioBruto * aliquota11;
-} else {
-  INSS = aliquotaMax;
+function calculaINSS(salarioBruto) {
+  if (salarioBruto <= 1556.94) {
+    return salarioBruto * aliquota08;
+  } else if (salarioBruto <= 2594.92) {
+    return salarioBruto * aliquota09;
+  } else if (salarioBruto <= 5189.82) {
+    return salarioBruto * aliquota11;
+  } else {
+    return aliquotaMax;
+  }
 }
 
-let salarioBase = salarioBruto - INSS;
-
-if (salarioBase <= 1903.98) {
-  IR = 0;
-} else if (salarioBase <= 2826.65) {
-  IR = salarioBase * aliquota075 - 142.8;
-} else if (salarioBase <= 3751.05) {
-  IR = salarioBase * aliquota15 - 354.8;
-} else if (salarioBase <= 4664.68) {
-  IR = salarioBase * aliquota225 - 636.13;
-} else {
-  IR = salarioBase * aliquota275 - 869.36;
+function calculaIR(salarioBase) {
+  if (salarioBase <= 1903.98) {
+    return 0;
+  } else if (salarioBase <= 2826.65) {
+    return salarioBase * aliquota075 - 142.8;
+  } else if (salarioBase <= 3751.05) {
+    return salarioBase * aliquota15 - 354.8;
+  } else if (salarioBase <= 4664.68) {
+    return salarioBase * aliquota225 - 636.13;
+  } else {
+    return salarioBase * aliquota275 - 869.36;
+  }
 }
 
-let salarioLiquido = salarioBase - IR;
+function calculaSalario(salarioBruto) {
+  let INSS = calculaINSS(salarioBruto);
+  let salarioBase = salarioBruto - INSS;
+  let IR = calculaIR(salarioBase);
 
-console.log(salarioLiquido);
+  return salarioBase - IR;
+}
+
+
+console.log(calculaSalario(salarioBruto));
