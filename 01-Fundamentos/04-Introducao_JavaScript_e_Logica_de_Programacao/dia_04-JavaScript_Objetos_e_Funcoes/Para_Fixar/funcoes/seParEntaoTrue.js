@@ -1,12 +1,16 @@
-let num1 = 35;
-let num2 = 15;
-let num3 = 7;
-let result;
+const num1 = 35;
+const num2 = 15;
+const num3 = 8;
 
-if (num1 % 2 == 0 || num2 % 2 == 0 || num3 % 2 == 0) {
-  result = true;
-} else {
-  result = false;
+
+function isEven(num1, num2, num3){
+  if (num1 % 2 == 0 || num2 % 2 == 0 || num3 % 2 == 0) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
-console.log(result);
+
+
+console.log(isEven(num1, num2, num3));
