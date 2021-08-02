@@ -1,22 +1,27 @@
-let nota = 90;
-let result;
+let nota = 50;
 
-if (nota < 0 || nota > 100) {
-  result = "Erro! Nota inválida";
-} else {
-  if (nota >= 90) {
-    result = "A";
-  } else if (nota >= 80) {
-    result = "B";
-  } else if (nota >= 70) {
-    result = "C";
-  } else if (nota >= 60) {
-    result = "D";
-  } else if (nota >= 50) {
-    result = "E";
-  } else if (nota < 50) {
-    result = "F";
+function toConcept(nota){
+  if (nota < 0 || nota > 100) {
+    return "Erro! Nota inválida";
+  } else {
+    if (nota >= 90) {
+      return "A";
+    } else if (nota >= 80) {
+      return "B";
+    } else if (nota >= 70) {
+      return "C";
+    } else if (nota >= 60) {
+      return "D";
+    } else if (nota >= 50) {
+      return "E";
+    } else if (nota < 50) {
+      return "F";
+    }
   }
 }
 
-console.log(result);
+
+
+console.log(toConcept(nota));
+
+
