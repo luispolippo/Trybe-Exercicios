@@ -1,11 +1,12 @@
-let a = 10;
-let b = 5;
-let result;
+const a = 10;
+const b = 5;
 
-if (a > b) {
-  result = a;
-} else {
-  result = b;
+function biggerNum(a, b) {
+  if (a > b) {
+    return a;
+  } else {
+    return b;
+  }
 }
 
-console.log(result);
+console.log(biggerNum(a, b));

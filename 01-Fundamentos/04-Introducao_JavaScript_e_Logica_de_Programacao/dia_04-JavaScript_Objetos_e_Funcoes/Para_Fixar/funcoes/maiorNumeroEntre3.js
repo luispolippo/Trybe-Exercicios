@@ -1,15 +1,15 @@
-let a = 30;
-let b = 50;
-let c = 20;
+const a = 70;
+const b = 50;
+const c = 20;
 
-let result;
-
-if (a > b && a > c) {
-  result = a;
-} else if (b > c) {
-  result = b;
-} else {
-  result = c;
+function biggerNum(a, b, c){
+  if (a > b && a > c) {
+    return a;
+  } else if (b > c) {
+    return b;
+  } else {
+    return c;
+  }
 }
 
-console.log(result);
+console.log(biggerNum(a, b, c));
