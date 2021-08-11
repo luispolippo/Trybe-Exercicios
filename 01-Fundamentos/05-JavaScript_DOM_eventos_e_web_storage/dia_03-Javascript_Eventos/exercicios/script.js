@@ -48,7 +48,6 @@ for (let i = 0; i < dezDaysList.length; i += 1) {
 }
 
 // Requisito 2
-
 function createButton(string){
   let button = document.createElement('button');
   button.innerHTML = string;
@@ -57,3 +56,33 @@ function createButton(string){
 }
 
 createButton('Feriados');
+
+// Requisito 3
+function showHolidays() {
+  let holidays = document.getElementsByClassName('holiday');
+  for (let i = 0; i < holidays.length; i += 1) {
+    let holiday = holidays[i];
+    holiday.style.backgroundColor = 'rgb(101, 232, 126)'
+  }
+  buttonState = true;
+}
+
+function hideHolidays() {
+  let holidays = document.getElementsByClassName('holiday');
+  for (let i = 0; i < holidays.length; i += 1) {
+    let holiday = holidays[i];
+    holiday.style.backgroundColor = 'rgb(238,238,238)'
+  }
+  buttonState = false;
+}
+
+let buttonHolidays = document.getElementById('btn-holiday');
+
+let buttonState = false;
+buttonHolidays.addEventListener('click', function() {
+  if(buttonState){
+    hideHolidays();
+  } else {
+    showHolidays();
+  }
+});
