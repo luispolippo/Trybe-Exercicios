@@ -46,3 +46,14 @@ for (let i = 0; i < dezDaysList.length; i += 1) {
 
   daysList.appendChild(li);
 }
+
+// Requisito 2
+
+function createButton(string){
+  let button = document.createElement('button');
+  button.innerHTML = string;
+  button.id = 'btn-holiday';
+  document.querySelector('.buttons-container').appendChild(button);
+}
+
+createButton('Feriados');
