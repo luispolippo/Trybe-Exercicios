@@ -131,3 +131,16 @@ buttonFriday.addEventListener("click", function () {
     showFridays();
   }
 });
+
+// Requisito 6
+let days = document.getElementsByClassName("day");
+
+for (let i = 0; i < days.length; i += 1) {
+  let day = days[i];
+  day.addEventListener("mouseover", function (event) {
+    event.target.style.fontSize = "25px";
+  });
+  day.addEventListener("mouseleave", function (event) {
+    event.target.style.fontSize = "20px";
+  });
+}
