@@ -133,14 +133,27 @@ buttonFriday.addEventListener("click", function () {
 });
 
 // Requisito 6
-let days = document.getElementsByClassName("day");
+function zoomEffect() {
+  let days = document.getElementsByClassName("day");
 
-for (let i = 0; i < days.length; i += 1) {
-  let day = days[i];
-  day.addEventListener("mouseover", function (event) {
-    event.target.style.fontSize = "25px";
-  });
-  day.addEventListener("mouseleave", function (event) {
-    event.target.style.fontSize = "20px";
-  });
+  for (let i = 0; i < days.length; i += 1) {
+    let day = days[i];
+    day.addEventListener("mouseover", function (event) {
+      event.target.style.fontSize = "25px";
+    });
+    day.addEventListener("mouseleave", function (event) {
+      event.target.style.fontSize = "20px";
+    });
+  }
 }
+
+zoomEffect();
+
+// Requisito 7
+function addTask(tarefa) {
+  let myTask = document.createElement("span");
+  myTask.innerHTML = tarefa;
+  document.querySelector(".my-tasks").appendChild(myTask);
+}
+
+addTask("Estudar");
