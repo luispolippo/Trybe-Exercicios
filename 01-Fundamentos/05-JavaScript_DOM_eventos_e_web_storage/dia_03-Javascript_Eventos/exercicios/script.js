@@ -48,14 +48,14 @@ for (let i = 0; i < dezDaysList.length; i += 1) {
 }
 
 // Requisito 2
-function createButton(string){
+function createButtonHoliday(string){
   let button = document.createElement('button');
   button.innerHTML = string;
   button.id = 'btn-holiday';
   document.querySelector('.buttons-container').appendChild(button);
 }
 
-createButton('Feriados');
+createButtonHoliday('Feriados');
 
 // Requisito 3
 function showHolidays() {
@@ -86,3 +86,13 @@ buttonHolidays.addEventListener('click', function() {
     showHolidays();
   }
 });
+
+// Requisito 4
+function createButtonFriday(string){
+  let btnFriday = document.createElement('button');
+  btnFriday.innerHTML = string;
+  btnFriday.id = 'btn-friday';
+  document.querySelector('.buttons-container').appendChild(btnFriday);
+}
+
+createButtonFriday('Sexta-feira');
