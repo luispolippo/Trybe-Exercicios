@@ -24,63 +24,67 @@ createDaysOfTheWeek();
 // Escreva seu código abaixo.
 
 // Requisito 1
-const dezDaysList = [
-  29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
-  21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31,
-];
+function showDays() {
+  const dezDaysList = [
+    29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19,
+    20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31,
+  ];
 
-const daysList = document.getElementById("days");
+  const daysList = document.getElementById("days");
 
-for (let i = 0; i < dezDaysList.length; i += 1) {
-  let day = dezDaysList[i];
-  let li = document.createElement("li");
-  li.innerHTML = day;
+  for (let i = 0; i < dezDaysList.length; i += 1) {
+    let day = dezDaysList[i];
+    let li = document.createElement("li");
+    li.innerHTML = day;
 
-  li.className = "day";
-  if (day === 24 || day === 25 || day === 31) {
-    li.className += " holiday";
+    li.className = "day";
+    if (day === 24 || day === 25 || day === 31) {
+      li.className += " holiday";
+    }
+    if (day === 4 || day === 11 || day === 18 || day === 25) {
+      li.className += " friday";
+    }
+
+    daysList.appendChild(li);
   }
-  if (day === 4 || day === 11 || day === 18 || day === 25) {
-    li.className += " friday";
-  }
-
-  daysList.appendChild(li);
 }
+
+showDays();
 
 // Requisito 2
-function createButtonHoliday(string){
-  let button = document.createElement('button');
+function createButtonHoliday(string) {
+  let button = document.createElement("button");
   button.innerHTML = string;
-  button.id = 'btn-holiday';
-  document.querySelector('.buttons-container').appendChild(button);
+  button.id = "btn-holiday";
+  document.querySelector(".buttons-container").appendChild(button);
 }
 
-createButtonHoliday('Feriados');
+createButtonHoliday("Feriados");
 
 // Requisito 3
 function showHolidays() {
-  let holidays = document.getElementsByClassName('holiday');
+  let holidays = document.getElementsByClassName("holiday");
   for (let i = 0; i < holidays.length; i += 1) {
     let holiday = holidays[i];
-    holiday.style.backgroundColor = 'rgb(101, 232, 126)'
+    holiday.style.backgroundColor = "rgb(101, 232, 126)";
   }
   buttonState = true;
 }
 
 function hideHolidays() {
-  let holidays = document.getElementsByClassName('holiday');
+  let holidays = document.getElementsByClassName("holiday");
   for (let i = 0; i < holidays.length; i += 1) {
     let holiday = holidays[i];
-    holiday.style.backgroundColor = 'rgb(238,238,238)'
+    holiday.style.backgroundColor = "rgb(238,238,238)";
   }
   buttonState = false;
 }
 
-let buttonHolidays = document.getElementById('btn-holiday');
+let buttonHolidays = document.getElementById("btn-holiday");
 
 let buttonState = false;
-buttonHolidays.addEventListener('click', function() {
-  if(buttonState){
+buttonHolidays.addEventListener("click", function () {
+  if (buttonState) {
     hideHolidays();
   } else {
     showHolidays();
@@ -88,11 +92,42 @@ buttonHolidays.addEventListener('click', function() {
 });
 
 // Requisito 4
-function createButtonFriday(string){
-  let btnFriday = document.createElement('button');
+function createButtonFriday(string) {
+  let btnFriday = document.createElement("button");
   btnFriday.innerHTML = string;
-  btnFriday.id = 'btn-friday';
-  document.querySelector('.buttons-container').appendChild(btnFriday);
+  btnFriday.id = "btn-friday";
+  document.querySelector(".buttons-container").appendChild(btnFriday);
 }
 
-createButtonFriday('Sexta-feira');
+createButtonFriday("Sexta-feira");
+
+// Requisito 5
+function showFridays() {
+  let fridays = document.getElementsByClassName("friday");
+  for (let i = 0; i < fridays.length; i += 1) {
+    let friday = fridays[i];
+    friday.innerHTML = "Sextou!";
+  }
+  buttonFridayState = true;
+}
+
+function hideFridays() {
+  const dezFridays = [4, 11, 18, 25];
+  let fridays = document.getElementsByClassName("friday");
+  for (let i = 0; i < fridays.length; i += 1) {
+    let friday = fridays[i];
+    friday.innerHTML = dezFridays[i];
+  }
+  buttonFridayState = false;
+}
+
+let buttonFridayState = false;
+
+let buttonFriday = document.getElementById("btn-friday");
+buttonFriday.addEventListener("click", function () {
+  if (buttonFridayState) {
+    hideFridays();
+  } else {
+    showFridays();
+  }
+});
