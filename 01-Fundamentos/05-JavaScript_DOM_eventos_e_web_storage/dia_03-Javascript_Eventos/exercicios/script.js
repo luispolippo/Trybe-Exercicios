@@ -160,10 +160,31 @@ addTask("Estudar");
 
 // Requisito 8
 function colorSubtitle(color) {
-  let colorDiv = document.createElement('div');
-  colorDiv.className = 'task';
+  let colorDiv = document.createElement("div");
+  colorDiv.className = "task";
   colorDiv.style.backgroundColor = color;
-  document.querySelector('.my-tasks').appendChild(colorDiv); 
+  document.querySelector(".my-tasks").appendChild(colorDiv);
 }
 
-colorSubtitle('yellow');
+colorSubtitle("yellow");
+
+// Requisito 9
+function taskSelection() {
+  let task = document.querySelector(".task");
+  let taskState = false;
+  let taskText = document.querySelector('.my-tasks span');
+
+  task.addEventListener("click", function (event) {
+    if (taskState) {
+      event.target.className = "task";
+      taskText.style.fontWeight = '';
+      taskState = false;
+    } else {
+      event.target.className = "task selected";
+      taskText.style.fontWeight = '600';
+      taskState = true;
+    }
+  });
+}
+
+taskSelection();
