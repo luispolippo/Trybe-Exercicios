@@ -16,15 +16,47 @@
   display: inline-block;
 }
 
+.background-color {
+  margin-right: 50px;
+  border: 1px solid black;
+  max-width: 250px;
+}
+
+.line-space {
+  margin-left: 50px;
+  border: 1px solid black;
+  max-width: 250px;
+}
+
+.font-color {
+  border: 1px solid black;
+  width: 250px;
+  margin-right: 50px;
+}
+
+.font-size {
+  border: 1px solid black;
+  width: 250px;
+  margin-right: 50px;
+}
+
+.font-family {
+  border: 1px solid black;
+  width: 250px;
+}
+
 .options-separator {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
 }
 
-
 .text-section {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
+}
+
+.options-section {
+  margin-bottom: 50px;
 }
