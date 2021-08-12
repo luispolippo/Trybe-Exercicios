@@ -157,3 +157,13 @@ function addTask(tarefa) {
 }
 
 addTask("Estudar");
+
+// Requisito 8
+function colorSubtitle(color) {
+  let colorDiv = document.createElement('div');
+  colorDiv.className = 'task';
+  colorDiv.style.backgroundColor = color;
+  document.querySelector('.my-tasks').appendChild(colorDiv); 
+}
+
+colorSubtitle('yellow');
