@@ -172,19 +172,40 @@ colorSubtitle("yellow");
 function taskSelection() {
   let task = document.querySelector(".task");
   let taskState = false;
-  let taskText = document.querySelector('.my-tasks span');
+  let taskText = document.querySelector(".my-tasks span");
 
   task.addEventListener("click", function (event) {
     if (taskState) {
       event.target.className = "task";
-      taskText.style.fontWeight = '';
+      taskText.style.fontWeight = "";
       taskState = false;
     } else {
       event.target.className = "task selected";
-      taskText.style.fontWeight = '600';
+      taskText.style.fontWeight = "600";
       taskState = true;
     }
   });
 }
 
 taskSelection();
+
+// Requisito 10
+function colorDay() {
+  let days = document.getElementsByClassName("day");
+  let colorState = false;
+  for (let i = 0; i < days.length; i += 1) {
+    let day = days[i];
+    day.addEventListener("click", function (event) {
+      let taskColor = document.querySelector(".selected").style.backgroundColor;
+      if(colorState){
+        event.target.style.color = 'rgb(119, 119, 119)';
+        colorState = false;
+      } else {
+        event.target.style.color = taskColor;
+        colorState = true;
+      }
+    });
+  }
+}
+
+colorDay();
