@@ -197,8 +197,8 @@ function colorDay() {
     let day = days[i];
     day.addEventListener("click", function (event) {
       let taskColor = document.querySelector(".selected").style.backgroundColor;
-      if(colorState){
-        event.target.style.color = 'rgb(119, 119, 119)';
+      if (colorState) {
+        event.target.style.color = "rgb(119, 119, 119)";
         colorState = false;
       } else {
         event.target.style.color = taskColor;
@@ -209,3 +209,29 @@ function colorDay() {
 }
 
 colorDay();
+
+// Requisito Bônus
+function appointments() {
+  let btnAddTask = document.getElementById("btn-add");
+  let input = document.getElementById('task-input');
+
+  btnAddTask.addEventListener("click", addAppointment);
+  input.addEventListener('keypress', addAppointment);
+}
+
+function addAppointment(event) {
+  let inputText = document.getElementById("task-input").value;
+  if(event.type === 'click' || event.keyCode === 13){
+    if (inputText === "") {
+      alert("Erro! Digite um compromisso.");
+    } else {
+      let taskListItem = document.createElement("li");
+      taskListItem.innerText = inputText;
+  
+      document.querySelector(".task-list").appendChild(taskListItem);
+    }
+  }
+  
+}
+
+appointments();
