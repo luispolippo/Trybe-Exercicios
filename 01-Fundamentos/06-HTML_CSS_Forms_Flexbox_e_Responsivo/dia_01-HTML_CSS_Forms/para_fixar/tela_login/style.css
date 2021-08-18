@@ -1,0 +1,14 @@
+input[type="email"],
+input[type="password"] {
+  display: block;
+  margin-bottom: 10px;
+}
+
+button {
+  display: block;
+}
+
+input[type="checkbox"] {
+  margin-bottom: 20px;
+  margin-right: 10px;
+}
