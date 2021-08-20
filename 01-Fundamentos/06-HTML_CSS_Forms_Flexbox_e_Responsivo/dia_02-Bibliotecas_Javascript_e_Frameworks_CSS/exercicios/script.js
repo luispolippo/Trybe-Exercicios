@@ -1,3 +1,5 @@
+const { max } = require("moment");
+
 const button = document.getElementById("submitButton");
 const cleanButton = document.getElementById("cleanButton");
 const inputDate = document.getElementById("input-data");
@@ -73,7 +75,7 @@ function buttonReset(event) {
   }
 } */
 
-function showMessage(message) {
+/* function showMessage(message) {
   let div = document.getElementById("dados");
   for (let i = 0; i < message.length; i += 1) {
     let p = document.createElement("p");
@@ -172,12 +174,13 @@ function validateForm() {
     showResult(inputs);
   }
 }
-
+ */
 function buttonListener() {
   button.addEventListener("click", function () {
-    buttonReset(event);
+    /* buttonReset(event); */
     /* validateDate(); */
-    validateForm();
+    /* validateForm(); */
+    validate();
   });
 
   cleanButton.addEventListener("click", function () {
@@ -215,5 +218,83 @@ let options = {
 
 inputDate.DatePickerX.init(options);
 
+function validate() {
+new JustValidate(".js-form", {
+  rules: {
+    name: {
+      required: true,
+      maxLength: 40,
+    },
+    email: {
+      required: true,
+      maxLength: 50,
+    },
+    cpf: {
+      required: true,
+      maxLength: 11,
+    },
+    endereco: {
+      required: true,
+      maxLength: 200,
+    },
+    cidade: {
+      required: true,
+      maxLength: 28,
+    },
+    resumo: {
+      required: true,
+      maxLength: 1000,
+    },
+    cargo: {
+      required: true,
+      maxLength: 40,
+    },
+    descricao: {
+      required: true,
+      maxLength: 500,
+    },
+    data: {
+      required: true,
+    },
+  },
+  messages: {
+    name: {
+      required: "Nome não pode ser vazio.",
+      maxLength: "Nome deve ser menor que 40 caracteres",
+    },
+    email: {
+      required: "Email não pode ser vazio.",
+      maxLength: "Email deve ser menor que 50 caracteres",
+    },
+    cpf: {
+      required: "CPF não pode ser vazio.",
+      maxLength: "Limite de 11 caracteres",
+    },
+    endereco: {
+      required: "Endereço não pode ser vazio.",
+      maxLength: "Endereço deve ser menor que 200 caracteres",
+    },
+    cidade: {
+      required: "Cidade não pode ser vazio",
+      maxLength: "Cidade deve ser menor que 28 caracteres",
+    },
+    resumo: {
+      required: "Resumo não pode ser vazio",
+      maxLength: "Resumo deve ser menor que 1000 caracteres",
+    },
+    cargo: {
+      required: "Cargo não pode ser vazio.",
+      maxLength: "Cargo deve ser menor que 40 caracteres",
+    },
+    descricao: {
+      required: "Descrição não deve ser vazio.",
+      maxLength: "Descrição deve ser menor que 500 caracteres",
+    },
+    data: {
+      required: "Data não deve ser vazio.",
+    },
+  },
+});
+}
 buttonListener();
 createOptionStates();
