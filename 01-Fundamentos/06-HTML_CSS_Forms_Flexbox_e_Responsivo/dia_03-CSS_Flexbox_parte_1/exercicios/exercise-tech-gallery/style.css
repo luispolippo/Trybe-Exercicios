@@ -5,6 +5,22 @@
   font-family: 'Ubuntu';
 }
 
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(30, 30, 30);  
+  color: white;
+}
+
+.first-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-top: 10px;
+}
+
 .header-img {
   width: 70px;
 }
