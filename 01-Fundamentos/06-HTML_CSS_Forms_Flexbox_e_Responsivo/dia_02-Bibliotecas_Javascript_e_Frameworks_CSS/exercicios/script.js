@@ -1,4 +1,3 @@
-const { max } = require("moment");
 
 const button = document.getElementById("submitButton");
 const cleanButton = document.getElementById("cleanButton");
