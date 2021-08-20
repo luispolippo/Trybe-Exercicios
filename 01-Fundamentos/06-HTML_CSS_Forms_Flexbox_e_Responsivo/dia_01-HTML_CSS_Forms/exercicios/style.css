@@ -79,3 +79,7 @@ button {
 button:hover {
   border: 1px solid black;
 }
+
+#submitButton {
+  margin-bottom: 10px;
+}
