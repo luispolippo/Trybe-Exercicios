@@ -1,5 +1,6 @@
 const button = document.getElementById("submitButton");
 const cleanButton = document.getElementById("cleanButton");
+const inputDate = document.getElementById("input-data");
 const estados = {
   ac: "Acre",
   al: "Alagoas",
@@ -43,7 +44,7 @@ function buttonReset(event) {
   event.preventDefault();
 }
 
-function validateDate() {
+/* function validateDate() {
   let date = document.getElementById("input-data").value;
   let day = parseInt(date.substring(0, 2)) || "";
   let month = parseInt(date.substring(3, 5)) || "";
@@ -70,7 +71,7 @@ function validateDate() {
   if (year < 0) {
     alert("Ano deve ser válido");
   }
-}
+} */
 
 function showMessage(message) {
   let div = document.getElementById("dados");
@@ -175,7 +176,7 @@ function validateForm() {
 function buttonListener() {
   button.addEventListener("click", function () {
     buttonReset(event);
-    validateDate();
+    /* validateDate(); */
     validateForm();
   });
 
@@ -189,6 +190,30 @@ function buttonListener() {
     }
   });
 }
+
+let options = {
+  format: "dd/mm/yyyy",
+  weekDayLabels: ["Seg", "Ter", "Qua", "Qui", "Sex", "Sab", "Dom"],
+  singleMonthLabels: [
+    "Janeiro",
+    "Fevereiro",
+    "Março",
+    "Abril",
+    "Maio",
+    "Junho",
+    "Julho",
+    "Agosto",
+    "Setembro",
+    "Outubro",
+    "Novembro",
+    "Dezembro",
+  ],
+  todayButtonLabel: "Hoje",
+  clearButtonLabel: "Limpar",
+  mondayFirst: false,
+};
+
+inputDate.DatePickerX.init(options);
 
 buttonListener();
 createOptionStates();
