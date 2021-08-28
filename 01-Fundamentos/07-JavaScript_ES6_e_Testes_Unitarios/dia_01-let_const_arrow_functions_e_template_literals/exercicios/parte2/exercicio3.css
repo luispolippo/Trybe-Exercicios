@@ -1,0 +1,23 @@
+body {
+  text-align: center;
+}
+
+button {
+  width: 60%;
+  margin: 10px 0;
+  height: 50px;
+  background-color: purple;
+  color: white;
+  font-size: 30px;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover{
+  background-color: rgb(148, 1, 148);
+}
+
+p {
+  font-size: 40px;
+  text-decoration: underline;
+}
