@@ -16,23 +16,33 @@
         <div class="options-separator">
           <div class="background-color">
             <h3>Cor de Fundo</h3>
-            <div class="backgroundColor-selector black"></div>
-            <div class="backgroundColor-selector white"></div>
-            <div class="backgroundColor-selector beige"></div>
+            <div class="background color-selector black"></div>
+            <div class="background color-selector white"></div>
+            <div class="background color-selector beige"></div>
           </div>
           <div class="line-space">
             <h3>Espaçamento entre linhas</h3>
+            <input min="18" type="number" id="line-space-input">
           </div>
         </div>
         <div class="options-separator">
           <div class="font-color">
             <h3>Cor da Fonte</h3>
+            <div class="font color-selector black"></div>
+            <div class="font color-selector white"></div>
+            <div class="font color-selector red"></div>
           </div>
           <div class="font-size">
             <h3>Tamanho da Fonte</h3>
+            <input id="font-size-input" type="number" min="12">
           </div>
           <div class="font-family">
             <h3>Fonte</h3>
+            <select name="font-selection" id="font-selection">
+              <option value="'Times New Roman', Times, serif">Time News Roman</option>
+              <option value="monospace">Monospace</option>
+              <option value="Arial, Helvetica, sans-serif">Arial</option>
+            </select>
           </div>
         </div>
       </section>
