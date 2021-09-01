@@ -9,20 +9,7 @@ function getChange(payable, paid) {
     throw Error('paid value is not enough');
   }
 
-  let count = 0;
-  
-  while(count !== remaining) {
-    for (let value of coins) {
-      count = 0;
-      for (let value of change) {
-        count += value;
-      }
-      if (remaining >= value && count !== remaining) {
-        change.push(value);
-      }
-    }
-  } 
-    
+
   return change;
 }
 
@@ -47,4 +34,6 @@ result = getChange(12, 400); // expect an array containing [200, 100, 50, 20, 10
 expected = [200, 100, 50, 20, 10, 5, 2, 1];
 assert.deepStrictEqual(result, expected);
 
-assert.throws(() => { getChange(100, 10); }, /^Error: paid value is not enough$/);
+assert.throws(() => {
+  getChange(100, 10);
+}, /^Error: paid value is not enough$/);
