@@ -9,11 +9,19 @@ function getChange(payable, paid) {
     throw Error('paid value is not enough');
   }
 
+  for (let index = 0; index < length; index += 1) {
+    let coin = coins[index];
+    let coinFit = parseInt(remaining/coin);
+    if (coinFit >= 1) {
+      change.push(coin);
+      remaining -= coin;
+      index -= 1;
+    }
+  }
 
   return change;
 }
 
-console.log(getChange(486, 600));
 
 const { throws } = require('assert');
 const assert = require('assert');
