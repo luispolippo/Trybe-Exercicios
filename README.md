@@ -75,7 +75,7 @@ Contém todas as atividades desenvolvidas por [mim](https://www.linkedin.com/in/
 **Bloco 10: Testes automatizados com Jest**
  - [x] 10.1 - Primeiros passos no Jest
  - [x] 10.2 - Jest - Testes Assíncronos
- - [ ] 10.3 - Jest - Simulando comportamentos
+ - [x] 10.3 - Jest - Simulando comportamentos
  - [ ] 10.4 - Projeto - Jest Assíncrono e Mocking
 
 ## Desenvolvimento Front-end ⏳
