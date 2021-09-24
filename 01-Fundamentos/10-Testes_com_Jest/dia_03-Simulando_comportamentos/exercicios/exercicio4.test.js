@@ -2,11 +2,11 @@ const funcs = require('./funcoes4e5');
 jest.mock('./funcoes4e5');
 
 test('#Exercicio 4 - função 1', () => {
-  funcs.uppercase.mockImplementation((string) => string.toLowerCase())
+  funcs.toUpperCase.mockImplementation((string) => string.toLowerCase())
 
-  funcs.uppercase('OLÁ');
-  expect(funcs.uppercase).toHaveBeenCalled();
-  expect(funcs.uppercase('OLÁ')).toBe('olá');
+  funcs.toUpperCase('OLÁ');
+  expect(funcs.toUpperCase).toHaveBeenCalled();
+  expect(funcs.toUpperCase('OLÁ')).toBe('olá');
 });
 
 test('#Exercicio 4 - função 2', () => {

@@ -9,10 +9,4 @@ const fetchApi = async (url) => {
   );
 };
 
-const result = async () => {
-  return await fetchApi('https://dog.ceo/api/breeds/image/random').then((json) => console.log(json)).catch(() => console.log('json'));
-};
-
-result();
-
-module.exports = { fetchApi, result };
+module.exports = { fetchApi };
