@@ -1,25 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
 
+const commitments = ['Estudar', 'Trabalhar', 'Almoçar', 'Pagar boleto', 'Dormir'];
+
+const task = (value) => {
+  return(
+    <li className='listItem'>{value}</li>
+  )
+}
+
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return(
+    commitments.map((commitment) => task(commitment))
+  )
 }
 
 export default App;
