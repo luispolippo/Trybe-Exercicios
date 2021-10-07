@@ -1,4 +1,3 @@
-import './App.css';
 import { Component } from 'react';
 
 class App extends Component {
@@ -17,45 +16,69 @@ class App extends Component {
   showButton1() {
     this.setState((estadoAnterior, _props) => ({
       numeroCliquesBtn1: estadoAnterior.numeroCliquesBtn1 + 1,
-    }));
+    }), () => {
+      console.log(this.setButtonColor(this.state.numeroCliquesBtn1));
+    });
   }
 
   showButton2() {
     this.setState((estadoAnterior, _props) => ({
       numeroCliquesBtn2: estadoAnterior.numeroCliquesBtn2 + 1,
-    }));
+    }),
+    () => {
+      console.log(this.setButtonColor(this.state.numeroCliquesBtn2));
+    });
+    
   }
 
   showButton3() {
     this.setState((estadoAnterior, _props) => ({
       numeroCliquesBtn3: estadoAnterior.numeroCliquesBtn3 + 1,
-    }));
+    }), () => {
+      console.log(this.setButtonColor(this.state.numeroCliquesBtn3));
+    });
   }
 
   setButtonColor(btnNum) {
-    return btnNum % 2 === 0 ? 'green' : 'light-gray';
+    if (btnNum % 2 === 0) {
+      return 'green';
+    }
+    return 'gray';
   }
 
   render() {
     const { numeroCliquesBtn1, numeroCliquesBtn2, numeroCliquesBtn3 } =
       this.state;
+    
+    const button1Style = {
+      backgroundColor: this.setButtonColor(numeroCliquesBtn1),
+    }
+
+    const button2Style = {
+      backgroundColor: this.setButtonColor(numeroCliquesBtn2),
+    }
+
+    const button3Style = {
+      backgroundColor: this.setButtonColor(numeroCliquesBtn3),
+    }
+
     return (
       <div>
         <button
           onClick={this.showButton1}
-          style={{backgroundColor: this.setButtonColor(numeroCliquesBtn1)}}
+          style={button1Style}
         >
           {numeroCliquesBtn1}
         </button>
         <button
           onClick={this.showButton2}
-          style={{ backgroundColor: this.setButtonColor(numeroCliquesBtn2) }}
+          style={button2Style}
         >
           {numeroCliquesBtn2}
         </button>
         <button
           onClick={this.showButton3}
-          style={{ backgroundColor: this.setButtonColor(numeroCliquesBtn3) }}
+          style={button3Style}
         >
           {numeroCliquesBtn3}
         </button>
