@@ -1,24 +1,19 @@
 import React from 'react';
 import Pokemon from './Pokemon';
+import Button from './Button';
+import './Pokedex.css'
 
 class Pokedex extends React.Component {
   constructor(props) {
     super(props);
 
-    this.nextBtn = this.nextBtn.bind(this);
-    this.previousBtn = this.previousBtn.bind(this);
-    this.filter = this.filter.bind(this);
-    this.btnFire = this.btnFire.bind(this);
-    this.btnPsychic = this.btnPsychic.bind(this);
-
     this.state = {
       currPokemon: 0,
-      pokemonType: 'all',
+      pokemonType: 'All',
     };
   }
 
-  nextBtn(length) {
-    console.log(length)
+  nextBtn = (length) => {
     this.setState((prevState) => {
       if (prevState.currPokemon === length -1) {
         return { currPokemon: 0 };
@@ -27,7 +22,7 @@ class Pokedex extends React.Component {
     });
   }
 
-  previousBtn(length) {
+  previousBtn = (length) => {
     this.setState((prevState) => {
       if (prevState.currPokemon === 0) {
         return { currPokemon: length -1};
@@ -36,46 +31,43 @@ class Pokedex extends React.Component {
     });
   }
 
-  filter() {
+  filter = () => {
     return this.props.pokemons.filter((pokemon) => {
-      if (this.state.pokemonType === 'all') return true;
+      if (this.state.pokemonType === 'All') return true;
       return pokemon.type === this.state.pokemonType;
     });
   }
 
-  btnFire() { 
-    this.setState({
-      pokemonType: 'Fire',
-      currPokemon: 0,
-    });
-  }
+  handleTypeClick = (event) => {
+    const element = event.target;
+    const type = element.innerText
+    this.setState({pokemonType: type, currPokemon: 0})
+  }; 
 
-  btnPsychic() {
-    this.setState({ pokemonType: 'Psychic', currPokemon: 0 });
-  }
-
-  btnAll = () => {
-    this.setState({
-      pokemonType: 'all',
-      pokemonsLength: this.props.pokemons.length - 1,
-    });
+  getPokemonTypes = () => {
+    const typesDuplicated = this.props.pokemons.map((pokemon) => pokemon.type);
+    return Array.from(new Set(typesDuplicated));
   };
 
   render() {
+    const pokemonTypes = this.getPokemonTypes();
     const filteredPokemons = this.filter();
     const lengthPokemons = filteredPokemons.length
     const pokemon = filteredPokemons[this.state.currPokemon];
     return (
       <div className='pokedex'>
         <Pokemon pokemon={pokemon} />
-        <div>
-          <button onClick={() => this.previousBtn(lengthPokemons)}>Anterior</button>
-          <button onClick={() => this.nextBtn(lengthPokemons)}>Próximo</button>
+        <div className="navButtons">
+          <button onClick={() => this.previousBtn(lengthPokemons)} disabled={lengthPokemons <= 1}>Anterior</button>
+          <button onClick={() => this.nextBtn(lengthPokemons)} disabled={lengthPokemons <= 1}>Próximo</button>
         </div>
-        <div>
-          <button onClick={this.btnFire}>Fire</button>
-          <button onClick={this.btnPsychic}>Psychic</button>
-          <button onClick={this.btnAll}>All</button>
+        <div className="typeButtons">
+          {
+            pokemonTypes.map((type) => {
+              return <Button key={type} onClick={this.handleTypeClick} type={type}/>
+            })
+          }
+          <button onClick={this.handleTypeClick}>All</button>
         </div>
       </div>
     );
