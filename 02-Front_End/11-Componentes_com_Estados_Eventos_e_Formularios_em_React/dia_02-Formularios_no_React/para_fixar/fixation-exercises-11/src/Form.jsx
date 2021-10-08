@@ -1,13 +1,20 @@
 import React, { Component } from 'react';
+import EmailForm from './EmailForm';
+import NomeForm from './NomeForm';
 
 class Form extends Component {
-  /* constructor(props) {
+  constructor(props) {
     super(props);
 
-    /* this.state = {
-      
-    } */
-  
+    this.state = {
+      nome: '',
+      email: '',
+      sexo: '',
+      sobre: '',
+      termos: false,
+      formularioComErros: '',   
+    }
+  }
 
   handleEvent = ({ target }) => {
     const { name } = target;
@@ -15,19 +22,18 @@ class Form extends Component {
     this.setState({ [name]: value });
   };
 
+  handleError = (error) => {
+    console.log(error)
+    this.setState({formularioComErros: error});
+  }
+
   render() {
     return (
       <form>
         <fieldset>
         <legend>Formulário</legend>
-          <label>
-            Nome:
-            <input type='text' name='nome' onChange={this.handleEvent} />
-          </label>
-          <label>
-            Email:
-            <input type='email' name='email' onChange={this.handleEvent} />
-          </label>
+          <NomeForm value={this.state.nome} handleError={this.handleError} handleEvent={this.handleEvent}/>
+          <EmailForm value={this.state.email} handleEvent={this.handleEvent}/>
           <label>
             Sexo:
             <select name='sexo' onChange={this.handleEvent}>
