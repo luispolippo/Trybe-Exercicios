@@ -85,10 +85,10 @@ Contém todas as atividades desenvolvidas por [mim](https://www.linkedin.com/in/
  - [x] 10.1 - Introdução - React
  - [x] 10.1 - 'Hello, world!' no React!
  - [x] 10.2 - Componentes React
- - [ ] 10.3 - Projeto - Movie Cards Library
+ - [x] 10.3 - Projeto - Movie Cards Library
 
 **Bloco 11: Componentes com Estado, Eventos e Formulários com React**
- - [ ] 11.1 - Componentes com estado e eventos
+ - [x] 11.1 - Componentes com estado e eventos
  - [ ] 11.2 - Formulários no React
  - [ ] 11.3 - Projeto - Movie Cards Library Stateful
 
