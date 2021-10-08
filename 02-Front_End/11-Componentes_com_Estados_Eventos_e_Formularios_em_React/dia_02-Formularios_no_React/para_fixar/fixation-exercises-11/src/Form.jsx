@@ -1,41 +1,53 @@
 import React, { Component } from 'react';
 
 class Form extends Component {
-  constructor(props) {
+  /* constructor(props) {
     super(props);
 
-    this.state = {
-      nome: '',
-    }
+    /* this.state = {
+      
+    } */
+  
 
-  }
+  handleEvent = ({ target }) => {
+    const { name } = target;
+    const value = target.type === 'checkbox' ? target.checked : target.value;
+    this.setState({ [name]: value });
+  };
 
-  handleChange = (event) => {
-    this.setState({ nome: event.target.value })
-  }
-
-  render(){
+  render() {
     return (
       <form>
+        <fieldset>
+        <legend>Formulário</legend>
+          <label>
+            Nome:
+            <input type='text' name='nome' onChange={this.handleEvent} />
+          </label>
+          <label>
+            Email:
+            <input type='email' name='email' onChange={this.handleEvent} />
+          </label>
+          <label>
+            Sexo:
+            <select name='sexo' onChange={this.handleEvent}>
+              <option value='F'>Feminino</option>
+              <option value='M'>Masculino</option>
+              <option value='O'>Outro</option>
+            </select>
+          </label>
+          <label>
+            Sobre:
+            <textarea name='sobre' onChange={this.handleEvent} />
+          </label>
+          <label>
+            Arquivo:
+            <input type='file' />
+          </label>
+        </fieldset>
         <label>
-          Nome:
-          <input type="text" onChange={this.handleChange}/>
-        </label>
-        <label>
-          Email:
-          <input type="email" />
-        </label>
-        <label>
-          Sexo:
-          <select>
-            <option value="F">Feminino</option>
-            <option value="M">Masculino</option>
-            <option value="O">Outro</option>
-          </select>
-        </label>
-        <label>
-          Sobre:
-          <textarea />
+          Aceito os termos
+          <input name='termos' type='checkbox' onChange={this.handleEvent} />
         </label>
       </form>
     );
