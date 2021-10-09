@@ -7,7 +7,7 @@ class InputEmail extends React.Component {
 
     let error = undefined;
     if (value.length === 0) error = 'Campo Obrigatório'
-    if (value.length > 40) error = 'Máximo de 50 caracteres'
+    if (value.length > 50) error = 'Máximo de 50 caracteres'
 
     return (
       <div>

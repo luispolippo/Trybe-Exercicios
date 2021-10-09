@@ -1,4 +1,5 @@
 import React from 'react';
+import InputCpf from './formComponents/InputCpf';
 import InputEmail from './formComponents/InputEmail';
 import InputNome from './formComponents/InputNome';
 
@@ -30,12 +31,9 @@ class PersonalData extends React.Component {
     return (
       <fieldset>
         <legend>Dados pessoais</legend>
-          <InputNome type="text" label="Nome:" name="nome" handler={this.handler} value={nome}/>
-          <InputEmail type="text" label="Email:" name="email" handler={this.handler} value={email}/>
-        <label>
-          CPF:
-          <input type="text" name="cpf" />
-        </label>
+        <InputNome type="text" label="Nome:" name="nome" handler={this.handler} value={nome}/>
+        <InputEmail type="text" label="Email:" name="email" handler={this.handler} value={email}/>
+        <InputCpf type="text" label="CPF:" name="cpf" handler={this.handler} value={cpf}/>
         <label>
           Endereço:
           <input type="text" name="endereco"/>
