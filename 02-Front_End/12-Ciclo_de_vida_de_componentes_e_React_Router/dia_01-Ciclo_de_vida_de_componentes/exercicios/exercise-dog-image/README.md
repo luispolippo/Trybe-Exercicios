@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+# EXERCÍCIOS
+## Exercício 1
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Crie uma aplicação que consuma a API de fotos aleatórias de cachorros. Use a [dog.ceo](https://dog.ceo/dog-api/). Para refrescar a memória acerca de como fazer requisições, revisite o [conteúdo sobre Promises](https://app.betrybe.com/course/fundamentals/js-asynchronous/promises) ou [consulte a documentação](https://developer.mozilla.org/pt-BR/docs/Web/API/Fetch_API/Using_Fetch)!
 
-## Available Scripts
+Observe a estrutura de dados que a API retorna:
+```
+  {
+    "message": "https:\/\/images.dog.ceo/breeds/bulldog-french/n02108915_5306.jpg",
+    "status": "success"
+  }
+```
 
-In the project directory, you can run:
+* Assim que a página for montada, uma primeira requisição deve acontecer, e a imagem deve ser mostrada na tela;
 
-### `npm start`
+* Enquanto a requisição é feita, o texto 'Loading...' deve ser a única coisa presente na tela;
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+* Deve existir um botão que, para cada clique, busque mais um doguinho.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Exercício 2
+Com o código do exercício anterior, você irá implementar mais algumas funcionalidades:
 
-### `npm test`
+* A cada tentativa de atualização do componente, verifique se o campo message tem a palavra terrier. Se sim, não atualize o componente. Pesquise pelo método includes;
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* Guarde a url da última imagem gerada no localStorage após cada atualização.
 
-### `npm run build`
+* Após a atualização do componente, exiba um alert com a raça do doguinho (verifique o campo message);
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Bônus
+Com o código do ultimo exercício, implemente:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* A cada foto que for baixada, através de um input, permita que quem usa dê um nome ao doguinho;
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* Crie um botão que guarde o resultado, juntamente com o nome dado ao 'doguinho', em um array;
 
-### `npm run eject`
+* Guarde o array no localStorage a cada atualização, e não mais a url da última imagem gerada;
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* A cada inicialização da aplicação, verifique se existem dados prévios guardados no localStorage. Caso haja, ignore a instrução "assim que a página for renderizada, uma primeira requisição deve acontecer e a imagem deve ser mostrada na tela" e exiba a última imagem guardada.
