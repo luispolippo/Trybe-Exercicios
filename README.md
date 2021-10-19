@@ -94,7 +94,7 @@ Contém todas as atividades desenvolvidas por [mim](https://www.linkedin.com/in/
 
 **Bloco 12: Ciclo de Vida de Componentes e React Router**
  - [x] 12.1 - Ciclo de vida de componentes
- - [ ] 12.2 - React Router
+ - [x] 12.2 - React Router
  - [ ] 12.3 - Projeto - Movie Cards Library CRUD
 
 **Bloco 13: Metodologias Ágeis**
