@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Link, Route, Switch } from 'react-router-dom';
 import './App.css';
 import pokemons from './data';
 import Pokedex from './Pokedex';
@@ -10,6 +10,9 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <h1> Pokedex </h1>
+        <nav>
+          <Link to="/" >Home</Link>
+        </nav>
         <Switch>
           <Route path="/pokemons/:id" render={(props) => <PokemonDetails pokemons={pokemons} {...props}/>} />
           <Route path="/" render={(props) => <Pokedex pokemons={pokemons} {...props}/>} />
