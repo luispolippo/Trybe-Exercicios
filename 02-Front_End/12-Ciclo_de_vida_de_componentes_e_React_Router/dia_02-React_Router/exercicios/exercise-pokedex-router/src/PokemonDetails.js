@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './PokemonsDetails.css';
 
 class PokemonDetails extends Component {
   render() {
@@ -11,22 +12,36 @@ class PokemonDetails extends Component {
     const idNumber = parseInt(id);
     return pokemons.filter((pokemon) => pokemon.id === idNumber)
       .map((pokemon) => {
-        const {id, name, type, averageWeight: {value, measurementUnit}, summary, foundAt} = pokemon;
+        const {id, name, type, averageWeight , summary, foundAt, image} = pokemon;
         return (<div key={id}>
-          <h2>{name}</h2>
-          <p>{type}</p>
-          <p>{value} {measurementUnit}</p>
+          <h2>{name} Details</h2>
+          <div className="pokemon">
+            <div>
+              <p> {name} </p>
+              <p> {type} </p>
+              <p> {`Average weight: ${averageWeight.value} ${averageWeight.measurementUnit}`}</p>
+            </div>
+            <img src={image} alt={`${name} sprite`} />
+          </div>
+          <div>
+          <h2>Summary</h2>  
           <p>{summary}</p>
-          {
-            foundAt.map((local) => {
-              const {location, map} = local;
-              return (
-                <div>
-                <p>{location}</p>
-                <img src={map} alt={location} />
-              </div>
-            )})
-          }
+          </div>
+          <div className="locations">
+            <h2>Game Locations</h2>
+            <div className="maps">
+            {
+              foundAt.map((local) => {
+                const {location, map} = local;
+                return (
+                  <div>
+                  <p>{location}</p>
+                  <img src={map} alt={location} />
+                </div>
+              )})
+            }
+            </div>
+          </div>
         </div>
       )})
   }

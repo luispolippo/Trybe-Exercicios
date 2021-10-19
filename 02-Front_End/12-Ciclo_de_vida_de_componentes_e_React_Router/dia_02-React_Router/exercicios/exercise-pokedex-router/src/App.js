@@ -10,7 +10,7 @@ import NotFound from './NotFound';
 function App() {
   return (
     <BrowserRouter>
-      <div className="App">
+      <div className="app">
         <h1> Pokedex </h1>
         <nav>
           <Link to="/" >Home</Link>
