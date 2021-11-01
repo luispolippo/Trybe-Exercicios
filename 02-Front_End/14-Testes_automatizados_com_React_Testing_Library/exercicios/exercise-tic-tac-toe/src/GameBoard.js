@@ -6,7 +6,7 @@ import './GameBoard.css';
 class GameBoard extends React.Component {
   render() {
     return (
-      <div className="game-board">
+      <div data-testid="game_board" className="game-board">
         {this.props.gameState.map((playerId, i) => (
           <GameCell id={i} />
         ))}
