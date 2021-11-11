@@ -104,11 +104,11 @@ Contém todas as atividades desenvolvidas por [mim](https://www.linkedin.com/in/
 **Bloco 14: Testes automatizados com React Testing Library**
  - [x] 14.1 - RTL - Primeiros passos
  - [x] 14.2 - RTL - Mocks e Inputs
- - [ ] 14.3 - RTL - Testando React Router
- - [ ] 14.4 - Projeto - Testes em React
+ - [x] 14.3 - RTL - Testando React Router
+ - [x] 14.4 - Projeto - Testes em React
 
 **Bloco 15: Gerenciamento de estado com Redux**
- - [ ] 15.1 - Introdução ao Redux - O estado global da aplicação
+ - [x] 15.1 - Introdução ao Redux - O estado global da aplicação
  - [ ] 15.2 - Usando o Redux no React
  - [ ] 15.3 - Usando o Redux no React - Prática
  - [ ] 15.4 - Usando o Redux no React - Actions Assíncronas
