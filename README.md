@@ -110,7 +110,7 @@ Contém todas as atividades desenvolvidas por [mim](https://www.linkedin.com/in/
 **Bloco 15: Gerenciamento de estado com Redux**
  - [x] 15.1 - Introdução ao Redux - O estado global da aplicação
  - [x] 15.2 - Usando o Redux no React
- - [ ] 15.3 - Usando o Redux no React - Prática
+ - [x] 15.3 - Usando o Redux no React - Prática
  - [ ] 15.4 - Usando o Redux no React - Actions Assíncronas
  - [ ] 15.5 - Testes síncronos com React-Redux
  - [ ] 15.6 - Projeto - Tabela com filtros de dados
