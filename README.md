@@ -112,11 +112,11 @@ Contém todas as atividades desenvolvidas por [mim](https://www.linkedin.com/in/
  - [x] 15.2 - Usando o Redux no React
  - [x] 15.3 - Usando o Redux no React - Prática
  - [x] 15.4 - Usando o Redux no React - Actions Assíncronas
- - [ ] 15.5 - Testes síncronos com React-Redux
- - [ ] 15.6 - Projeto - Tabela com filtros de dados
+ - [x] 15.5 - Testes síncronos com React-Redux
+ - [x] 15.6 - Projeto - TrybeWallet
 
 **Bloco 16: Projeto Jogo de Trivia**
- - [ ] 16.1 - Projeto - Jogo de Trivia
+ - [x] 16.1 - Projeto - Jogo de Trivia
 
 **Bloco 17: Context API e React Hooks**
  - [ ] 17.1 - Context API do React
