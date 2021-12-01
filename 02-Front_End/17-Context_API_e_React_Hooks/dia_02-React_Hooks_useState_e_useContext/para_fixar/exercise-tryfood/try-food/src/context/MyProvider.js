@@ -22,12 +22,26 @@ function MyProvider({ children }) {
 
   /* Passo 8 */
   const removeItemFromList = (orderState, indexPresentInList, itemType) => {
-    setOrderList();
+    setOrderList(
+      {
+        ...orderList,
+        [itemType]: [
+          ...orderState.slice(0, indexPresentInList),
+          ...orderState.slice(indexPresentInList + 1),
+        ],
+      },
+    );
   };
 
   /* Passo 9 */
   const updateValueItemInList = (orderState, indexPresentInList, newItem) => {
-    setOrderList();
+    orderState.splice(indexPresentInList, 1, newItem);
+    setOrderList(
+      {
+        ...orderList,
+        [newItem.itemType]: orderState,
+      },
+    );
   };
 
   /* Passo 7 */
@@ -43,7 +57,12 @@ function MyProvider({ children }) {
 
   /* Passo 6 */
   const addItemToList = (newItem) => {
-    setOrderList();
+    setOrderList(
+      {
+        ...orderList,
+        [newItem.itemType]: [...orderList[newItem.itemType], newItem],
+      },
+    );
   };
 
   /* Passo 2 */
@@ -59,7 +78,8 @@ function MyProvider({ children }) {
     };
 
     /* Passo 4 */
-    const isPresentInList = '';
+    const isPresentInList = orderList[newItem.itemType]
+      .some((item) => item.id === newItem.id);
 
     /* Passo 5 */
     if (!isPresentInList) {
