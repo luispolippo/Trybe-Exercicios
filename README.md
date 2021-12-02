@@ -119,8 +119,8 @@ Contém todas as atividades desenvolvidas por [mim](https://www.linkedin.com/in/
  - [x] 16.1 - Projeto - Jogo de Trivia
 
 **Bloco 17: Context API e React Hooks**
- - [ ] 17.1 - Context API do React
- - [ ] 17.2 - React Hooks - useState e useContext
+ - [x] 17.1 - Context API do React
+ - [x] 17.2 - React Hooks - useState e useContext
  - [ ] 17.3 - React Hooks - useEffect e Hooks customizados
  - [ ] 17.4 - Projeto - StarWars Datatable com Context API e Hooks
 
