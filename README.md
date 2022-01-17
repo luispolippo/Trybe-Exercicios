@@ -78,7 +78,7 @@ Contém todas as atividades desenvolvidas por [mim](https://www.linkedin.com/in/
  - [x] 10.3 - Jest - Simulando comportamentos
  - [x] 10.4 - Projeto - Jest Assíncrono e Mocking
 
-## Desenvolvimento Front-end ⏳
+## Desenvolvimento Front-end ✅
 
 **Bloco 10-B: Introdução à React**
  - [x] 10.1 - Introdução - Front-end
@@ -122,27 +122,33 @@ Contém todas as atividades desenvolvidas por [mim](https://www.linkedin.com/in/
  - [x] 17.1 - Context API do React
  - [x] 17.2 - React Hooks - useState e useContext
  - [x] 17.3 - React Hooks - useEffect e Hooks customizados
- - [ ] 17.4 - Projeto - StarWars Datatable com Context API e Hooks
+ - [x] 17.4 - Projeto - StarWars Datatable com Context API e Hooks
 
 **Bloco 18: Projeto App de Receitas**
- - [ ] 18.1 - Projeto - App de Receitas
+ - [x] 18.1 - Projeto - App de Receitas
 
 ## Desenvolvimento Back-end ⏳
 
-**Bloco 19: Introdução à SQL**
- - [ ] 19.1 - Introdução - Back-end
- - [ ] 19.1 - Introdução - Bancos de dados relacionais
- - [ ] 19.1 - Banco de dados SQL
- - [ ] 19.2 - Encontrando dados em um banco de dados
- - [ ] 19.3 - Filtrando dados de forma específica
- - [ ] 19.4 - Manipulando tabelas
- - [ ] 19.5 - Projeto - All For One
+**Bloco 19: Docker: Utilizando Containers**
+- [x] 19.1 - Introdução - Back-end
+- [x] 19.1 - Utilizando Containers - Docker
+- [ ] 19.2 - Manipulação e Criação de Imagens no Docker
+- [ ] 19.3 - Orquestrando Containers com Docker Compose
+- [ ] 19.4 - Projeto - Docker Todo-List
 
-**Bloco 20: Funções SQL, Joins e Subqueries**
- - [ ] 20.1 - Funções mais usadas no SQL
- - [ ] 20.2 - Descomplicando JOINs e UNIONs
- - [ ] 20.3 - Stored Routines & Subqueries
- - [ ] 20.4 - Projeto - Vocabulary Booster
+**Bloco 20: Introdução à SQL**
+ - [ ] 20.1 - Introdução - Bancos de dados relacionais
+ - [ ] 20.1 - Banco de dados SQL
+ - [ ] 20.2 - Encontrando dados em um banco de dados
+ - [ ] 20.3 - Filtrando dados de forma específica
+ - [ ] 20.4 - Manipulando tabelas
+ - [ ] 20.5 - Projeto - All For One
+
+**Bloco 21: Funções SQL, Joins e Subqueries**
+ - [ ] 21.1 - Funções mais usadas no SQL
+ - [ ] 21.2 - Descomplicando JOINs
+ - [ ] 21.3 - Transformando ideias em um modelo de banco de dados
+ - [ ] 21.4 - Aula ao vivo + Projeto - One For All
 
 **Bloco 21: Normalização e Modelagem de Banco de Dados**
  - [ ] 21.1 - Transformando ideias em um modelo de banco de dados
@@ -150,82 +156,82 @@ Contém todas as atividades desenvolvidas por [mim](https://www.linkedin.com/in/
  - [ ] 21.3 - Transformando ideias em um modelo de banco de dados - Parte 2
  - [ ] 21.4 - Projeto - One For All
 
-**Bloco 22: Introdução ao MongoDB**
- - [ ] 22.1 - Introdução - NoSQL
- - [ ] 22.1 - MongoDB - Introdução
- - [ ] 22.2 - Filter Operators
- - [ ] 22.3 - Projeto - Data Flights
+**Bloco 22: Introdução ao desenvolvimento Web com NodeJS**
+ - [ ] 22.1 - Intro - NodeJS
+ - [ ] 22.1 - NodeJS - Introdução
+ - [ ] 22.2 - NodeJS - Fluxo Assíncrono
+ - [ ] 22.3 - Testes com NodeJS
+ - [ ] 22.4 - Express: HTTP com Node.js
+ - [ ] 22.5 - Praticando Express
+ - [ ] 22.6 - Projeto - Talker manager
 
-**Bloco 23: MongoDB: Updates Simples e Complexos**
- - [ ] 23.1 - Updates Simples
- - [ ] 23.2 - Updates Complexos - Arrays - Parte 1
- - [ ] 23.3 - Updates Complexos - Arrays - Parte 2
- - [ ] 23.4 - Projeto - Commerce
+**Bloco 23: NodeJS: Camada de Serviço e Arquitetura Rest e Restful**
+ - [ ] 23.1 - Introdução - Arquitetura de Software
+ - [ ] 23.1 - Arquitetura de Software - Camada de Model
+ - [ ] 23.2 - Arquitetura de Software - Camada de Controller e Service
+ - [ ] 23.3 - Arquitetura Web - Rest e Restful
+ - [ ] 23.4 - Arquitetura de Software - Testando as Camadas
+ - [ ] 23.5 - Projeto - Store Manager
 
-**Bloco 24: MongoDB: Aggregation Framework**
- - [ ] 24.1 - Aggregation Framework - Parte 1
- - [ ] 24.2 - Aggregation Framework - Parte 2
- - [ ] 24.3 - Projeto - Aggregations
+**Bloco 24: NodeJS: ORM e Autenticação**
+- [ ] 24.1 - Introdução - NodeJS: ORM e Autenticação
+- [ ] 24.1 - ORM - Interface da aplicação com banco de dados
+- [ ] 24.2 - ORM - Associations
+- [ ] 24.3 - JWT - (JSON Web Token)
+- [ ] 24.4 - Testando APIs com Testes de Integração
+- [ ] 24.5 - Projeto - API de Blogs
 
-**Bloco 25: Introdução ao desenvolvimento Web com NodeJS**
- - [ ] 25.1 - Intro - NodeJS
- - [ ] 25.1 - NodeJS - Introdução
- - [ ] 25.2 - NodeJS - Fluxo Assíncrono
- - [ ] 25.3 - Testes com NodeJS
- - [ ] 25.4 - Express: HTTP com Node.js
- - [ ] 25.5 - Praticando Express
- - [ ] 25.6 - Projeto - Talker manager
+**Bloco 25: Deployment**
+ - [ ] 25.1 - Introdução - Deploy
+ - [ ] 25.1 - Infraestrutura - Deploy com Heroku
+ - [ ] 25.2 - Deploy Docker & Heroku
+ - [ ] 25.3 - Projeto - Stranger Things
 
-**Bloco 26: NodeJS: Camada de Serviço e Arquitetura Rest e Restful**
- - [ ] 26.1 - Introdução - Arquitetura de Software
- - [ ] 26.1 - Arquitetura de Software - Camada de Model
- - [ ] 26.2 - Arquitetura de Software - Camada de Controller e Service
- - [ ] 26.3 - Arquitetura Web - Rest e Restful
- - [ ] 26.4 - Arquitetura de Software - Testando as Camadas
- - [ ] 26.5 - Projeto - Store Manager
+**Bloco 26: TypeScript**
+- [ ] 26.1 - Introdução - TypeScript
+- [ ] 26.1 - Introdução ao TypeScript
+- [ ] 26.2 - Tipagem Estática e Generics
+- [ ] 26.3 - Express com TypeScript
+- [ ] 26.4 - Projeto - Trybe Smith
 
-**Bloco 27: Autenticação e Upload de Arquivos**
- - [ ] 27.1 - NodeJS - JWT - (JSON Web Token)
- - [ ] 27.2 - NodeJS - Upload de arquivos com Multer
- - [ ] 27.3 - NodeJS - Testando APIs com Testes de Integração
- - [ ] 27.4 - Projeto - Cookmaster
+**Bloco 27: Programação Orientada a Objetos (POO) e SOLID**
+- [ ] 27.1 - Introdução à Orientação a Objetos
+- [ ] 27.2 - Herança e Interfaces
+- [ ] 27.3 - Polimorfismo
+- [ ] 27.4 - SOLID - Introdução
+- [ ] 27.5 - SOLID - Continuação
+- [ ] 27.6 - Projeto - Trybers and Dragons
 
-**Bloco 28: Deployment**
- - [ ] 28.1 - Introdução - Deploy
- - [ ] 28.1 - Infraestrutura - Deploy com Heroku
- - [ ] 28.2 - Deploy - Gerenciadores de Processos
- - [ ] 28.3 - Projeto - Stranger Things
+**Bloco 28: Projeto - TFC - Trybe Futebol Clube**
+- [ ] 28.1 - Projeto - TFC - Trybe Futebol Clube
 
-**Bloco 29: Arquitetura: SOLID e ORM**
- - [ ] 29.1 - Arquitetura - Princípios SOLID
- - [ ] 29.2 - ORM - Interface da aplicação com o banco de dados
- - [ ] 29.3 - ORM - Associations
- - [ ] 29.4 - Boas práticas na escrita de testes
- - [ ] 29.5 - Projeto - API de Blogs
+**Bloco 29: Introdução ao MongoDB**
+ - [ ] 29.1 - Introdução - NoSQL
+ - [ ] 29.1 - MongoDB - Introdução
+ - [ ] 29.2 - Filter Operators
+ - [ ] 29.3 - Projeto - Data Flights
 
-**Bloco 30: Sockets**
- - [ ] 30.1 - Sockets - TCP/UDP & NET
- - [ ] 30.2 - Sockets - Socket.io
- - [ ] 30.3 - Projeto - Webchat
+**Bloco 30: MongoDB: Updates Simples e Complexos**
+ - [ ] 30.1 - Updates Simples
+ - [ ] 30.2 - Updates Complexos - Arrays - Parte 1
+ - [ ] 30.3 - Updates Complexos - Arrays - Parte 2
+ - [ ] 30.4 - Projeto - Commerce
 
-**Bloco 31: Projeto Trybeer II**
- - [ ] 31.1 - Projeto - Trybeer v2
+**Bloco 31: MasterClass - VPS, CI/CD**
+- [ ] 31.1 - Dia 1
+- [ ] 31.2 - Dia 2
+
+**Bloco 32: Projeto - App de Delivery**
+- [ ] 32.1 - Projeto - App de Delivery
 
 ## Ciência da Computação ⏳
 
-**Bloco 32: Arquitetura de Computadores e Redes**
- - [ ] 32.1 - Introdução - Ciência da Computação
- - [ ] 32.2 - Arquitetura de Computadores
- - [ ] 32.3 - Arquitetura de redes
- - [ ] 32.4 - Redes de computadores, ferramentas e segurança
- - [ ] 32.5 - Projeto - Explorando os protocolos
-
-**Bloco 33: Introdução à Python e Raspagem de Dados da Web**
- - [ ] 33.1 - Aprendendo Python
- - [ ] 33.2 - Entrada e Saída de dados
- - [ ] 33.3 - Raspagem de Dados
- - [ ] 33.4 - Testes
- - [ ] 33.5 - Projeto - Tech news
+**Bloco 33: Introdução à Python**
+- [ ] 33.1 - Introdução - Ciência da Computação
+- [ ] 33.1 - Aprendendo Python
+- [ ] 33.2 - Entrada e Saída de Dados
+- [ ] 33.3 - Testes
+- [ ] 33.4 - Projeto - Job Insights
 
 **Bloco 34: Programação Orientada a Objetos e Padrões de Projeto**
  - [ ] 34.1 - Introdução à programação orientada a objetos
@@ -233,23 +239,29 @@ Contém todas as atividades desenvolvidas por [mim](https://www.linkedin.com/in/
  - [ ] 34.3 - Padrões de projeto
  - [ ] 34.4 - Projeto - Relatórios de Estoque
 
-**Bloco 35: Algoritmos e Estrutura de Dados**
- - [ ] 35.1 - Complexidade de Algoritmos
- - [ ] 35.2 - Recursividade e Estratégias para solução de problemas
- - [ ] 35.3 - Algoritmos de ordenação e busca
- - [ ] 35.4 - Projeto - Algoritmos
+**Bloco 35: Redes e Raspagem de Dados**
+- [ ] 35.1 - Arquitetura de Redes
+- [ ] 35.2 - Redes de computadores, ferramentas e segurança
+- [ ] 35.3 - Raspagem de Dados
+- [ ] 35.4 - Projeto - Tech News
 
-**Bloco 36: Estrutura de Dados: Hash e Set**
- - [ ] 36.1 - Arrays
- - [ ] 36.2 - Hashmap e Dict
- - [ ] 36.3 - Set
- - [ ] 36.4 - Projeto - Restaurant Orders
+**Bloco 36: Algoritmos**
+ - [ ] 36.1 - Complexidade de Algoritmos
+ - [ ] 36.2 - Recursividade e Estratégias para solução de problemas
+ - [ ] 36.3 - Algoritmos de ordenação e busca
+ - [ ] 36.4 - Projeto - Algoritmos
 
-**Bloco 37: Estrutura de Dados: Pilhas, Filas e Listas**
- - [ ] 37.1 - Nó e Listas Encadeadas
- - [ ] 37.2 - Deque
- - [ ] 37.3 - Pilhas
- - [ ] 37.4 - Projeto - TING - Trybe Is Not Google
+**Bloco 37: Estrutura de Dados I: Arrays, Hashmaps e Sets**
+ - [ ] 37.1 - Arquitetura de Computadores
+ - [ ] 37.2 - Arrays
+ - [ ] 37.3 - Hashmap e Dict
+ - [ ] 37.4 - Set
+ - [ ] 37.5 - Projeto - Restaurant Orders
+
+**Bloco 38: Estrutura de Dados II: Pilhas, Filas e Listas**
+ - [ ] 38.1 - Nó e Listas Encadeadas
+ - [ ] 38.2 - Pilhas e Filas
+ - [ ] 38.4 - Projeto - TING - Trybe Is Not Google
 
 
  
