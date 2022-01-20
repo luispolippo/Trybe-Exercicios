@@ -1,0 +1,7 @@
+version: '3'
+services:
+  app:
+    build: . 
+    image: docker-react:0.1
+    ports:
+      - 8080:80  
