@@ -141,7 +141,7 @@ Contém todas as atividades desenvolvidas por [mim](https://www.linkedin.com/in/
  - [x] 20.1 - Banco de dados SQL
  - [x] 20.2 - Encontrando dados em um banco de dados
  - [x] 20.3 - Filtrando dados de forma específica
- - [ ] 20.4 - Manipulando tabelas
+ - [x] 20.4 - Manipulando tabelas
  - [ ] 20.5 - Projeto - All For One
 
 **Bloco 21: Funções SQL, Joins e Subqueries**
