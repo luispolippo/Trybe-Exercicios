@@ -147,7 +147,7 @@ Contém todas as atividades desenvolvidas por [mim](https://www.linkedin.com/in/
 **Bloco 21: Funções SQL, Joins e Subqueries**
  - [x] 21.1 - Funções mais usadas no SQL
  - [x] 21.2 - Descomplicando JOINs
- - [ ] 21.3 - Transformando ideias em um modelo de banco de dados
+ - [x] 21.3 - Transformando ideias em um modelo de banco de dados
  - [ ] 21.4 - Aula ao vivo + Projeto - One For All
 
 **Bloco 21: Normalização e Modelagem de Banco de Dados**
