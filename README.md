@@ -148,17 +148,17 @@ Contém todas as atividades desenvolvidas por [mim](https://www.linkedin.com/in/
  - [x] 21.1 - Funções mais usadas no SQL
  - [x] 21.2 - Descomplicando JOINs
  - [x] 21.3 - Transformando ideias em um modelo de banco de dados
- - [ ] 21.4 - Aula ao vivo + Projeto - One For All
+ - [x] 21.4 - Aula ao vivo + Projeto - One For All
 
 **Bloco 21: Normalização e Modelagem de Banco de Dados**
- - [ ] 21.1 - Transformando ideias em um modelo de banco de dados
- - [ ] 21.2 - Normalização, Formas Normais e Dumps
- - [ ] 21.3 - Transformando ideias em um modelo de banco de dados - Parte 2
- - [ ] 21.4 - Projeto - One For All
+ - [x] 21.1 - Transformando ideias em um modelo de banco de dados
+ - [x] 21.2 - Normalização, Formas Normais e Dumps
+ - [x] 21.3 - Transformando ideias em um modelo de banco de dados - Parte 2
+ - [x] 21.4 - Projeto - One For All
 
 **Bloco 22: Introdução ao desenvolvimento Web com NodeJS**
- - [ ] 22.1 - Intro - NodeJS
- - [ ] 22.1 - NodeJS - Introdução
+ - [x] 22.1 - Intro - NodeJS
+ - [x] 22.1 - NodeJS - Introdução
  - [ ] 22.2 - NodeJS - Fluxo Assíncrono
  - [ ] 22.3 - Testes com NodeJS
  - [ ] 22.4 - Express: HTTP com Node.js
