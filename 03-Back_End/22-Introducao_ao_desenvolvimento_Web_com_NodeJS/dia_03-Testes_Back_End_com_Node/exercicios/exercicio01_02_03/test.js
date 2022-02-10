@@ -23,9 +23,8 @@ describe('A função deve', () => {
   })
 
   it('retorna Erro se o parametro nao for numero', () => {
-    const resposta = whatIsThisNumber('1');
-    expect(resposta).to.be.equal('parametro deve ser um numero');
-  });
+    expect(() => whatIsThisNumber('1')).to.throw('parametro deve ser um numero');
+  })
 })
 
 
