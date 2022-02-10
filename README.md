@@ -160,7 +160,7 @@ Contém todas as atividades desenvolvidas por [mim](https://www.linkedin.com/in/
  - [x] 22.1 - Intro - NodeJS
  - [x] 22.1 - NodeJS - Introdução
  - [x] 22.2 - NodeJS - Fluxo Assíncrono
- - [ ] 22.3 - Testes com NodeJS
+ - [x] 22.3 - Testes com NodeJS
  - [ ] 22.4 - Express: HTTP com Node.js
  - [ ] 22.5 - Praticando Express
  - [ ] 22.6 - Projeto - Talker manager
