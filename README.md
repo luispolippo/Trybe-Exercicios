@@ -162,13 +162,13 @@ Contém todas as atividades desenvolvidas por [mim](https://www.linkedin.com/in/
  - [x] 22.2 - NodeJS - Fluxo Assíncrono
  - [x] 22.3 - Testes com NodeJS
  - [x] 22.4 - Express: HTTP com Node.js
- - [ ] 22.5 - Praticando Express
- - [ ] 22.6 - Projeto - Talker manager
+ - [x] 22.5 - Praticando Express
+ - [x] 22.6 - Projeto - Talker manager
 
 **Bloco 23: NodeJS: Camada de Serviço e Arquitetura Rest e Restful**
- - [ ] 23.1 - Introdução - Arquitetura de Software
- - [ ] 23.1 - Arquitetura de Software - Camada de Model
- - [ ] 23.2 - Arquitetura de Software - Camada de Controller e Service
+ - [x] 23.1 - Introdução - Arquitetura de Software
+ - [x] 23.1 - Arquitetura de Software - Camada de Model
+ - [x] 23.2 - Arquitetura de Software - Camada de Controller e Service
  - [ ] 23.3 - Arquitetura Web - Rest e Restful
  - [ ] 23.4 - Arquitetura de Software - Testando as Camadas
  - [ ] 23.5 - Projeto - Store Manager
