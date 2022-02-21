@@ -6,6 +6,21 @@ const getByCEP = async (cep) => {
   return address;
 };
 
+const addCEP = async (cep, logradouro, bairro, localidade, uf) => {
+  const query = `INSERT INTO 
+    cep_lookup.ceps (cep, logradouro, bairro, localidade, uf)
+    VALUES (?, ?, ?, ?, ?);`;
+  await connection.execute(query, [cep, logradouro, bairro, localidade, uf]);  
+  return {
+    cep,
+    logradouro,
+    bairro,
+    localidade,
+    uf,
+  }
+}
+
 module.exports = {
   getByCEP,
+  addCEP,
 }
