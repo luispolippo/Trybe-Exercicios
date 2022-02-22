@@ -170,7 +170,7 @@ Contém todas as atividades desenvolvidas por [mim](https://www.linkedin.com/in/
  - [x] 23.1 - Arquitetura de Software - Camada de Model
  - [x] 23.2 - Arquitetura de Software - Camada de Controller e Service
  - [x] 23.3 - Arquitetura Web - Rest e Restful
- - [ ] 23.4 - Arquitetura de Software - Testando as Camadas
+ - [x] 23.4 - Arquitetura de Software - Testando as Camadas
  - [ ] 23.5 - Projeto - Store Manager
 
 **Bloco 24: NodeJS: ORM e Autenticação**
