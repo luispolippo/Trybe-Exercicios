@@ -171,11 +171,11 @@ Contém todas as atividades desenvolvidas por [mim](https://www.linkedin.com/in/
  - [x] 23.2 - Arquitetura de Software - Camada de Controller e Service
  - [x] 23.3 - Arquitetura Web - Rest e Restful
  - [x] 23.4 - Arquitetura de Software - Testando as Camadas
- - [ ] 23.5 - Projeto - Store Manager
+ - [x] 23.5 - Projeto - Store Manager
 
 **Bloco 24: NodeJS: ORM e Autenticação**
-- [ ] 24.1 - Introdução - NodeJS: ORM e Autenticação
-- [ ] 24.1 - ORM - Interface da aplicação com banco de dados
+- [x] 24.1 - Introdução - NodeJS: ORM e Autenticação
+- [x] 24.1 - ORM - Interface da aplicação com banco de dados
 - [ ] 24.2 - ORM - Associations
 - [ ] 24.3 - JWT - (JSON Web Token)
 - [ ] 24.4 - Testando APIs com Testes de Integração
