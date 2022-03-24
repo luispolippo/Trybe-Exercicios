@@ -189,8 +189,8 @@ Contém todas as atividades desenvolvidas por [mim](https://www.linkedin.com/in/
 
 **Bloco 26: TypeScript**
 - [x] 26.1 - Introdução - TypeScript
-- [ ] 26.1 - Introdução ao TypeScript
-- [ ] 26.2 - Tipagem Estática e Generics
+- [x] 26.1 - Introdução ao TypeScript
+- [x] 26.2 - Tipagem Estática e Generics
 - [ ] 26.3 - Express com TypeScript
 - [ ] 26.4 - Projeto - Trybe Smith
 
