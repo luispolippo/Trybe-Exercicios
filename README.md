@@ -192,10 +192,10 @@ Contém todas as atividades desenvolvidas por [mim](https://www.linkedin.com/in/
 - [x] 26.1 - Introdução ao TypeScript
 - [x] 26.2 - Tipagem Estática e Generics
 - [x] 26.3 - Express com TypeScript
-- [ ] 26.4 - Projeto - Trybe Smith
+- [x] 26.4 - Projeto - Trybe Smith
 
 **Bloco 27: Programação Orientada a Objetos (POO) e SOLID**
-- [ ] 27.1 - Introdução à Orientação a Objetos
+- [x] 27.1 - Introdução à Orientação a Objetos
 - [ ] 27.2 - Herança e Interfaces
 - [ ] 27.3 - Polimorfismo
 - [ ] 27.4 - SOLID - Introdução
