@@ -197,7 +197,7 @@ Contém todas as atividades desenvolvidas por [mim](https://www.linkedin.com/in/
 **Bloco 27: Programação Orientada a Objetos (POO) e SOLID**
 - [x] 27.1 - Introdução à Orientação a Objetos
 - [x] 27.2 - Herança e Interfaces
-- [ ] 27.3 - Polimorfismo
+- [x] 27.3 - Polimorfismo
 - [ ] 27.4 - SOLID - Introdução
 - [ ] 27.5 - SOLID - Continuação
 - [ ] 27.6 - Projeto - Trybers and Dragons
