@@ -198,7 +198,7 @@ Contém todas as atividades desenvolvidas por [mim](https://www.linkedin.com/in/
 - [x] 27.1 - Introdução à Orientação a Objetos
 - [x] 27.2 - Herança e Interfaces
 - [x] 27.3 - Polimorfismo
-- [ ] 27.4 - SOLID - Introdução
+- [x] 27.4 - SOLID - Introdução
 - [ ] 27.5 - SOLID - Continuação
 - [ ] 27.6 - Projeto - Trybers and Dragons
 
