@@ -203,11 +203,11 @@ Contém todas as atividades desenvolvidas por [mim](https://www.linkedin.com/in/
 - [ ] 27.6 - Projeto - Trybers and Dragons
 
 **Bloco 28: Projeto - TFC - Trybe Futebol Clube**
-- [ ] 28.1 - Projeto - TFC - Trybe Futebol Clube
+- [x] 28.1 - Projeto - TFC - Trybe Futebol Clube
 
 **Bloco 29: Introdução ao MongoDB**
-- [ ] 29.1 - Introdução - NoSQL
-- [ ] 29.1 - MongoDB - Introdução
+- [x] 29.1 - Introdução - NoSQL
+- [x] 29.1 - MongoDB - Introdução
 - [ ] 29.2 - Filter Operators
 - [ ] 29.3 - Projeto - Data Flights
 
