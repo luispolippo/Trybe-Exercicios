@@ -208,7 +208,7 @@ Contém todas as atividades desenvolvidas por [mim](https://www.linkedin.com/in/
 **Bloco 29: Introdução ao MongoDB**
 - [x] 29.1 - Introdução - NoSQL
 - [x] 29.1 - MongoDB - Introdução
-- [ ] 29.2 - Filter Operators
+- [x] 29.2 - Filter Operators
 - [ ] 29.3 - Projeto - Data Flights
 
 **Bloco 30: MongoDB: Updates Simples e Complexos**
