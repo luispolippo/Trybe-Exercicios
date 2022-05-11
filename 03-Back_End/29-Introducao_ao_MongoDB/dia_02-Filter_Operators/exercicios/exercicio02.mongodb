@@ -1,0 +1,2 @@
+use('class');
+db.superheros.find({ 'aspects.height': { $lt: 180 } });

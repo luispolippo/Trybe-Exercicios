@@ -1,0 +1,5 @@
+use('business');
+db.restaurants.countDocuments({ $and: [
+  { brough: { $in: ['Queens', 'Staten Island', 'Brooklyn'] }},
+  { rating: { $gt: 4 } },
+] });
