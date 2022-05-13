@@ -1,0 +1,12 @@
+use('class');
+
+db.xmen.updateMany({
+  occupation: 'Junior Staff',
+  areas: null,
+}, {
+  $set: {
+    areas: ['Outside']
+  }
+})
+
+db.xmen.find().toArray();
