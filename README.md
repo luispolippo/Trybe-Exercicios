@@ -210,7 +210,7 @@ Contém todas as atividades desenvolvidas por [mim](https://www.linkedin.com/in/
 - [x] 29.1 - MongoDB - Introdução
 - [x] 29.2 - Filter Operators
 - [x] 29.3 - Operadores de consulta
-- [ ] 29.4 - Updates simples
+- [x] 29.4 - Updates simples
 - [ ] 29.5 - Updates complexos - Arrays
 - [ ] 29.6 - Projeto - Commerce
 
