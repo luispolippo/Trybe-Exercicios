@@ -211,7 +211,7 @@ Contém todas as atividades desenvolvidas por [mim](https://www.linkedin.com/in/
 - [x] 29.2 - Filter Operators
 - [x] 29.3 - Operadores de consulta
 - [x] 29.4 - Updates simples
-- [ ] 29.5 - Updates complexos - Arrays
+- [x] 29.5 - Updates complexos - Arrays
 - [ ] 29.6 - Projeto - Commerce
 
 **Bloco 30: MongoDB com Node.js e POO**
