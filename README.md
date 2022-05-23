@@ -212,10 +212,10 @@ Contém todas as atividades desenvolvidas por [mim](https://www.linkedin.com/in/
 - [x] 29.3 - Operadores de consulta
 - [x] 29.4 - Updates simples
 - [x] 29.5 - Updates complexos - Arrays
-- [ ] 29.6 - Projeto - Commerce
+- [x] 29.6 - Projeto - Commerce
 
 **Bloco 30: MongoDB com Node.js e POO**
-- [ ] 30.1 - MongoDB e arquitetura MSC
+- [x] 30.1 - MongoDB e arquitetura MSC
 - [ ] 30.2 - MongoDB e POO
 - [ ] 30.3 - Projeto - Car Shop
 
