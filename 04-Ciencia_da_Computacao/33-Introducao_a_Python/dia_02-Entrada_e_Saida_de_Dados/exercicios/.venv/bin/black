@@ -1,0 +1,10 @@
+#!/bin/sh
+'''exec' /home/guilherme/Documentos/Trybe-Exercicios/04-Ciencia_da_Computacao/33-Introducao_a_Python/dia_02-Entrada_e_Saida_de_Dados/exercicios/.venv/bin/python "$0" "$@"
+' '''
+# -*- coding: utf-8 -*-
+import re
+import sys
+from black import patched_main
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(patched_main())
